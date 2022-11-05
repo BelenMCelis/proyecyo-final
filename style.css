@@ -18,6 +18,7 @@ img {
   display: block;
   width: 100%;
 }
+
 .main-header {
   padding: 0 20px;
 }
@@ -96,10 +97,13 @@ img {
   width: 50%;
 }
 
-
+.main-title {
+  margin: 35px 20px 20px;
+}
 
 .main {
   padding: 0 20px;
+  margin-bottom: 20px;
 }
 
 /* ESTILOS DE SLIDER */
@@ -330,6 +334,7 @@ img {
   background-color: #FF4E00;
 }
 
+
 .main-footer{
   background: #151515;
   color: white;
@@ -349,6 +354,10 @@ img {
   padding: 10px 0;
 }
 
+.footer__link:hover {
+  color: #FF4E00;
+}
+
 .footer__input{
   background: #151515;
   width: 100%;
@@ -359,6 +368,15 @@ img {
 .copy {
   color: #555;
 }
+
+.icon__wp {
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  width: 150px;
+  height: 150px;
+}
+
 
 /*Estilos para tablet*/
 @media screen and (min-width:768px) {
@@ -441,7 +459,7 @@ img {
     color: white;
   }
   .container-products {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr); 
     grid-gap: 15px;
   }
   .product__img {
@@ -459,7 +477,7 @@ img {
   }
   .main-footer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
   }
   .copy {
