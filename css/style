@@ -313,10 +313,21 @@ a:hover {
   display: block;
   padding: 20px;
   border: 1px solid #555;
+  color: white;
 }
 
 .copy {
   color: #555;
+}
+
+.button__footer {
+  display: flex;
+  justify-content: start;
+}
+
+.button__footer .button_suscripcion {
+  background-color: rgba(191, 190, 190, 0.884);
+  margin-bottom: 10px;
 }
 
 /* Estilos boton wp */
@@ -450,6 +461,10 @@ a:hover {
 .slider__link:hover {
   background: #FF4E00;
   color: white;
+}
+
+.buton_contact {
+  color: red;
 }
 
 /*Estilos para tablet*/
@@ -598,7 +613,11 @@ a:hover {
   src: url(../fonts/Poppins-Bold.ttf);
 }
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
