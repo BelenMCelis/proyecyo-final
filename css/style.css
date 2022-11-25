@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Inconsolata);
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 nav {
   display: flex;
   height: 80px;
@@ -171,11 +171,12 @@ input[type=checkbox] {
   margin: 50px 50px;
   text-align: center;
   border-bottom: 1px dotted #333;
+  font-size: 35px;
 }
 
 .main {
   padding: 0 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* ESTILOS DE PRODUCTOS */
@@ -183,6 +184,8 @@ input[type=checkbox] {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 15px;
+  margin-bottom: 25px;
+  margin-top: 15px;
 }
 
 .product {
@@ -243,9 +246,11 @@ input[type=checkbox] {
 
 .kc-css .kc_button {
   color: #363636;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   padding: 40px 40px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .kc_button:hover {
@@ -331,8 +336,9 @@ a:hover {
 }
 
 .container-tips {
-  margin: 20px 0;
+  margin: 20px 20px;
   text-align: center;
+  padding: 0 50px;
 }
 
 .tip i {
@@ -360,6 +366,15 @@ a:hover {
 .btn-shop:hover {
   color: white;
   background-color: #FF4E00;
+}
+
+.bg__image {
+  background-image: url("../../imagenes/banner2.webp");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 25em;
+  margin-top: 80px;
 }
 
 .main-footer {
@@ -395,10 +410,12 @@ a:hover {
   padding: 20px;
   border: 1px solid #555;
   color: white;
+  margin-top: 15px;
 }
 
 .copy {
   color: #555;
+  margin-top: 25px;
 }
 
 .button__footer {
@@ -406,9 +423,9 @@ a:hover {
   justify-content: start;
 }
 
-.button__footer .button_suscripcion {
+.button__footer {
   background-color: rgba(191, 190, 190, 0.884);
-  margin-bottom: 10px;
+  width: 30px;
 }
 
 /* Estilos boton wp */
@@ -443,7 +460,7 @@ a:hover {
 }
 /* ESTILOS DE SLIDER */
 .container-slider {
-  margin: 50px 0;
+  margin: 0;
   position: relative;
   overflow: hidden;
 }
@@ -451,7 +468,7 @@ a:hover {
 .slider {
   display: flex;
   width: 400%;
-  height: 300px;
+  height: 400px;
   margin-left: -100%;
   position: relative;
 }
@@ -463,7 +480,7 @@ a:hover {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.262);
   height: 100%;
 }
 
@@ -483,12 +500,10 @@ a:hover {
   position: absolute;
   width: 40px;
   height: 40px;
-  background: rgba(255, 255, 255, 0.7);
   top: 50%;
   transform: translateY(-50%);
   font-size: 30px;
   font-weight: bold;
-  font-family: monospace;
   text-align: center;
   border-radius: 50%;
   cursor: pointer;
@@ -544,15 +559,22 @@ a:hover {
   color: white;
 }
 
+.body__contact {
+  min-height: 100vh;
+  background-image: url(../../imagenes/banner4.webp);
+  background-position: center;
+  background-attachment: fixed;
+}
+
 form {
   width: 450px;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 10px 20px;
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 100px;
   border-radius: 7px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 .style__contact {
@@ -594,6 +616,68 @@ textarea {
     width: 100%;
   }
 }
+.container__mensaje-gracias {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 19px;
+  width: 100vw;
+  height: 100vh;
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container__mensaje {
+  background-color: rgba(255, 77, 0, 0.3058823529);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1750px);
+  }
+}
+.slider-marcas {
+  background: white;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+}
+.slider-marcas::before, .slider-marcas::after {
+  background: linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider-marcas::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider-marcas::before {
+  left: 0;
+  top: 0;
+}
+.slider-marcas .slide-track {
+  animation: scroll 15s linear infinite;
+  display: flex;
+  width: 3500px;
+}
+.slider-marcas .slide {
+  height: 100px;
+  width: 250px;
+}
+
 /*Estilos para tablet*/
 @media screen and (min-width: 768px) {
   .slider {
@@ -613,6 +697,9 @@ textarea {
   .container {
     width: 1000px;
     margin: auto;
+  }
+  .kc-css .kc_button {
+    font-size: 15px;
   }
   #btn-menu {
     display: none;
@@ -677,7 +764,7 @@ textarea {
     grid-gap: 20px;
   }
   .product__img {
-    height: 150px;
+    height: 200px;
   }
   .container__testimonials {
     font-size: 1.3em;
@@ -688,6 +775,7 @@ textarea {
   }
   .editor__item {
     width: 48%;
+    height: 50%;
   }
   .main-footer {
     display: grid;
@@ -697,11 +785,24 @@ textarea {
   .copy {
     grid-column-start: span 4;
     text-align: center;
+    margin-top: 25px;
+  }
+  .container-tips {
+    margin: 50px 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 80px;
+  }
+  .tip {
+    padding: 15px 15px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
     width: 1200px;
+  }
+  .btn-shop {
+    width: 200px;
   }
   .main-header__container:nth-child(3) {
     padding-left: 60px;
@@ -710,7 +811,7 @@ textarea {
     font-size: 1.3em;
   }
   .slider {
-    height: 500px;
+    height: 700px;
     font-size: 1.5em;
   }
 }
@@ -725,19 +826,15 @@ textarea {
     font-size: 1.5em;
   }
   .slider {
-    height: 600px;
+    height: 800px;
   }
   .product__img {
     height: 200px;
   }
 }
 @font-face {
-  font-family: "Inconsolata";
-  src: url(../fonts/inconsolata.ttf);
-}
-@font-face {
-  font-family: "Poppins";
-  src: url(../fonts/Poppins-Bold.ttf);
+  font-family: "Nunito";
+  src: url(../../fonts/NunitoSans-Light.ttf);
 }
 * {
   padding: 0;
@@ -749,7 +846,7 @@ textarea {
 
 body {
   margin: 0;
-  font-family: "Inconsolata";
+  font-family: "Nunito";
 }
 
 img {

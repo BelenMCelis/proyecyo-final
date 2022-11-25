@@ -3,6 +3,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 15px;
+  margin-bottom: 25px;
+  margin-top: 15px;
 }
 
 .product {
@@ -63,9 +65,11 @@
 
 .kc-css .kc_button {
   color: #363636;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   padding: 40px 40px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .kc_button:hover {

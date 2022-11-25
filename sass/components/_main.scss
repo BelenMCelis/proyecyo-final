@@ -77,9 +77,11 @@ a:hover {
 }
 
 .container-tips {
-  margin: 20px 0;
+  margin: 20px 20px;
   text-align: center;
+  padding: 0 50px;
 }
+
 
 .tip i {
   font-size: 2em;
@@ -106,4 +108,13 @@ a:hover {
 .btn-shop:hover {
   color: white;
   background-color: #FF4E00;
+}
+
+.bg__image {
+  background-image: url('../../imagenes/banner2.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 25em;
+  margin-top: 80px;
 }

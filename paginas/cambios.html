@@ -14,51 +14,27 @@
 
 <body>
     <!--Menu Navegable-->
-    <!-- <header class="main-header">
-        <div class="container container--flex">
-            <div class="main-header__container">
-                <h1 class="main-header__title">GOGGLES</h1>
-                <span class="icon-menu fa-solid fa-bars" id="btn-menu"></span>
-                <nav class="main-nav" id="main-nav">
-                    <ul class="menu">
-                        <li class="menu__item"><a href="../index.html" class="menu__link">Inicio</a></li>
-                        <li class="menu__item"><a href="productos.html" class="menu__link">Productos</a></li>
-                        <li class="menu__item"><a href="cambios.html" class="menu__link">Politicas de cambio</a>
-                        </li>
-                        <li class="menu__item"><a href="nosotros.html" class="menu__link">Sobre Nosotros</a>
-                        </li>
-                        <li class="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="main-header__container">
-                <span class="main-header__txt">Contacto</span>
-                <p class="main-header__txt"><i class="fa-solid fa-phone"></i>1165623892</p>
-            </div>
-            <div class="main-header__container">
-                <i class="fa-solid fa-user"></i>
-                <a href="" class="main-header__btn">My carrito<i class="fa-solid fa-cart-shopping"></i></a>
-                <input type="search" class="main-header__input" placeholder="Buscar productos"><i
-                    class="fa-solid fa-magnifying-glass"></i>
-            </div>
-        </div>
-    </header> -->
-    <nav>
-      <div class="logo">
-        GOOGLES
+    <header>
+      <div><h1><a class="logo" href ="index.html">GOOGLES</a></h1>
       </div>
-      <input type="checkbox" id="click">
-      <label for="click" class="menu-btn">
-      <i class="fas fa-bars"></i>
-      </label>
-      <ul>
-         <li><a href="../index.html">Inicio</a></li>
-         <li><a href="productos.html">Productos</a></li>
-         <li><a class="active" href="cambios.html">Politicas de cambio</a></li>
-         <li><a href="nosotros.html">Sobre nosotros</a></li>
-         <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-   </nav>
+      <input type="checkbox" id="menu-bar">
+      <label for="menu-bar"><i class="fas fa-bars"></i></label>
+  
+      <nav class="navbar">
+          <ul>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="#">Productos +</a>
+                  <ul>
+                      <li><a href="productos.html">Lentes de Sol</a></li>
+                      <li><a href="lentesreceta.html">Lentes de Receta</a></li>
+                  </ul>
+              </li>
+              <li><a href="nosotros.html">Sobre Nosotros</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+      </nav>
+  </header>
+  
   
     
     
@@ -88,6 +64,7 @@
       <p class="footer__txt">Al suscribirse a nuestra lista de correo, siempre recibirá nuestras últimas noticias y
         actualizaciones</p>
       <input type="email" class="footer__input" placeholder="Escriba su mail">
+      <button class="button__fotter">Suscribirme</button>
     </div>
     <p class="copy">© 2022 Goggles. Todos los derechos reservados | Design by B.Celis</p>
 

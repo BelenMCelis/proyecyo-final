@@ -19,7 +19,9 @@
       width: 1000px;
       margin: auto;
     }
-    
+    .kc-css .kc_button {
+      font-size: 15px;
+    }
     #btn-menu {
       display: none;
     }
@@ -83,7 +85,7 @@
       grid-gap: 20px;
     }
     .product__img {
-      height: 150px;
+      height: 200px;
     }
     .container__testimonials{
       font-size: 1.3em; 
@@ -94,6 +96,7 @@
     }
     .editor__item{
       width: 48%;
+      height: 50%;
     }
     .main-footer {
       display: grid;
@@ -103,12 +106,28 @@
     .copy {
       grid-column-start: span 4;
       text-align: center;
+      margin-top: 25px;
     }
+    .container-tips{
+      margin: 50px 80px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 0 80px;
+    }
+
+    .tip {
+      padding: 15px 15px;
+    }
+
+
   }
   
   @media screen and (min-width:1280px) { 
     .container{
       width: 1200px;
+    }
+    .btn-shop {
+      width: 200px;
     }
     .main-header__container:nth-child(3){
       padding-left: 60px;
@@ -117,7 +136,7 @@
       font-size: 1.3em;
     }
     .slider{
-      height: 500px;
+      height: 700px;
       font-size: 1.5em;
     }
   }
@@ -133,9 +152,10 @@
       font-size: 1.5em;
     }
     .slider{
-      height: 600px;
+      height: 800px;
     }
     .product__img {
       height: 200px;
     }
+    
   }

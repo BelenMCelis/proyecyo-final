@@ -28,9 +28,11 @@
     padding: 20px;
     border: 1px solid #555;
     color: white;
+    margin-top: 15px;
   }
   .copy {
     color: #555;
+    margin-top: 25px;
   }
 
   .button__footer{
@@ -38,10 +40,9 @@
     justify-content: start;
   }
 
-  .button__footer .button_suscripcion {
+  .button__footer{
     background-color: rgba(191, 190, 190, 0.884);
-    margin-bottom: 10px;
-    
+    width: 30px; 
   }
 
   
