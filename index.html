@@ -24,6 +24,9 @@
   <link rel="stylesheet" href="css/style.css">
   <!--Iconos/ Font-awesone -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!--Animaciones-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -94,7 +97,8 @@
   <main class="main">
     <div class="container">
       <h2 class="main-title">Lentes de Sol</h2>
-      <section class="container-products">
+      <section class="container-products" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom">
         <div class="product">
           <img src="imagenes/s1.webp" alt="Lentes de sol para mujer de color negro" class="product__img">
           <div class="product__description">
@@ -157,18 +161,19 @@
       </div>
 
       <div class="container-editor">
-        <div class="editor__item">
+        <div class="editor__item" data-aos="fade-right">
           <img src="imagenes/img-estilo1.webp" alt="Mujer modelo con lentes estilo aviator de color negro" class="editor__img">
           <a href="paginas/productos.html" class="editor__circle">EXPRESA TU ESTILO AHORA</a>
         </div>
-        <div class="editor__item">
+        <div class="editor__item" data-aos="fade-left">
           <img src="imagenes/img-estilo2.webp" alt="Hombre modelo con lentes estilo aviator de color negro" class="editor__img">
           <a href="paginas/productos.html" class="editor__circle">EXPRESA TU ESTILO AHORA</a>
         </div>
       </div>
 
       <h2 class="main-title">Lentes de Receta</h2>
-      <section class="container-products">
+      <section class="container-products" data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom">
         <div class="product">
           <img src="imagenes/m2.webp" alt="Lentes de aumento, cristales transparentes y marco de color azul" class="product__img">
           <div class="product__description">
@@ -280,7 +285,7 @@
 
   <section class="bg__image"></section>
 
-         <section class="container-tips">
+         <section class="container-tips" data-aos="flip-left">
         <div class="tip">
           <i class="far fa-hand-paper"></i>
           <h2 class="tip__title">Satisfacción Garantizada</h2>
@@ -335,6 +340,11 @@
     </div>
 
   </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
   <script src="slider.js"></script>
   <!-- CDN para que nos funcionen los componentes de Bootstrap-->
