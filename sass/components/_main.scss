@@ -79,7 +79,7 @@ a:hover {
 .container-tips {
   margin: 20px 20px;
   text-align: center;
-  padding: 0 50px;
+  padding: 20px 50px;
 }
 
 
@@ -111,10 +111,11 @@ a:hover {
 }
 
 .bg__image {
-  background-image: url('../../imagenes/banner2.webp');
+  background-image: url('../../imagenes/Diseño.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center center;
   height: 25em;
   margin-top: 80px;
 }

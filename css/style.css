@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
 nav {
   display: flex;
@@ -171,7 +172,7 @@ input[type=checkbox] {
   margin: 50px 50px;
   text-align: center;
   border-bottom: 1px dotted #333;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .main {
@@ -258,6 +259,26 @@ input[type=checkbox] {
   color: #FF4E00;
 }
 
+.container-img__productos {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.img-banner_producto {
+  width: 100%;
+  box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
+}
+
+.container_txt-productos {
+  position: absolute;
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 0.1em 0.3em 0.1em rgba(0, 0, 0, 0.6);
+}
+
 .container__testimonials {
   text-align: center;
   background: rgba(0, 0, 0, 0.1176470588);
@@ -339,7 +360,7 @@ a:hover {
 .container-tips {
   margin: 20px 20px;
   text-align: center;
-  padding: 0 50px;
+  padding: 20px 50px;
 }
 
 .tip i {
@@ -370,10 +391,11 @@ a:hover {
 }
 
 .bg__image {
-  background-image: url("../../imagenes/banner2.webp");
+  background-image: url("../../imagenes/Diseño.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-position: center center;
   height: 25em;
   margin-top: 80px;
 }
@@ -381,12 +403,19 @@ a:hover {
 .main-footer {
   background: #151515;
   color: white;
-  padding: 30px 20px;
+  padding: 30px 30px;
 }
 
 .footer__title {
   border-bottom: 1px dotted #555;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.footer__title_contacto {
+  padding-top: 15px;
+  border-bottom: 1px dotted #555;
+  padding-bottom: 9px;
 }
 
 .footer__txt {
@@ -420,13 +449,8 @@ a:hover {
 }
 
 .button__footer {
-  display: flex;
-  justify-content: start;
-}
-
-.button__footer {
   background-color: rgba(191, 190, 190, 0.884);
-  width: 30px;
+  width: 40px;
 }
 
 /* Estilos boton wp */
@@ -796,6 +820,21 @@ textarea {
   }
   .tip {
     padding: 15px 15px;
+  }
+  .container_txt-productos {
+    font-size: 62px;
+  }
+  .main-title {
+    font-size: 35px;
+  }
+  .bg__image {
+    background-image: url("../../imagenes/banner2.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    height: 25em;
+    margin-top: 80px;
   }
 }
 @media screen and (min-width: 1280px) {
